@@ -1,0 +1,70 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0" version="28.2.7">
+  <diagram name="Page-1" id="DjavwUq9yiTLGXGtb56C">
+    <mxGraphModel dx="773" dy="786" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="YP3NUt8Klyb_MbmRAoc3-14" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="140" y="510" width="480" height="730" as="geometry" />
+        </mxCell>
+        <mxCell id="YP3NUt8Klyb_MbmRAoc3-19" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="170" y="720" width="420" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="YP3NUt8Klyb_MbmRAoc3-17" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="180" y="210" width="200" height="195" as="geometry" />
+        </mxCell>
+        <mxCell id="YP3NUt8Klyb_MbmRAoc3-2" value="Read and store Data from SingleStrokeFont.txt" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="200" y="120" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YP3NUt8Klyb_MbmRAoc3-3" value="userInput initial height&lt;div&gt;&amp;nbsp;(4mm - 10mm)&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="200" y="230" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YP3NUt8Klyb_MbmRAoc3-4" value="Scale X,Y based&lt;div&gt;&amp;nbsp;from&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;initial height,&lt;/span&gt;&lt;div&gt;height/18&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="200" y="320" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YP3NUt8Klyb_MbmRAoc3-5" value="Convert individual text char data in format from SingleStrokeFont.txt" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="200" y="940" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YP3NUt8Klyb_MbmRAoc3-7" value="Output processed char data to a medium file to be converted" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="200" y="1090" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YP3NUt8Klyb_MbmRAoc3-8" value="Add offset of 18,0" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="200" y="1020" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YP3NUt8Klyb_MbmRAoc3-9" value="Convert all char data to G-Code" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="200" y="1270" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YP3NUt8Klyb_MbmRAoc3-10" value="Start" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="220" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YP3NUt8Klyb_MbmRAoc3-11" value="is sum-of-char-width&lt;div&gt;&amp;nbsp;&amp;gt;= 100?&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="195" y="750" width="170" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="YP3NUt8Klyb_MbmRAoc3-12" value="Line break&lt;div&gt;Add offset of 0,(5/18)&lt;br&gt;&lt;div&gt;sum-of-char-width = 0&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="400" y="760" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YP3NUt8Klyb_MbmRAoc3-13" value="Add above to sum-of-char-width" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="200" y="1160" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YP3NUt8Klyb_MbmRAoc3-15" value="Read test.txt" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="200" y="430" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YP3NUt8Klyb_MbmRAoc3-16" value="for test.txt length" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="195" y="620" width="170" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="YP3NUt8Klyb_MbmRAoc3-18" value="Read next individual text&amp;nbsp;&lt;div&gt;char from test.txt&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="200" y="870" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YP3NUt8Klyb_MbmRAoc3-20" value="sum-of-char-width = 0" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="200" y="540" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YP3NUt8Klyb_MbmRAoc3-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="365" y="1110" as="sourcePoint" />
+            <mxPoint x="365" y="1110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
