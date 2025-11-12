@@ -1,3 +1,5 @@
 .vscode
 build/
 SingleStrokeFontNotes.txt
+.DS_Store
+Thumbs.db
