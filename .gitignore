@@ -1,6 +1,8 @@
 .vscode
+test
+BlinkSerial
+SerialEchoBlink
 build/
 SingleStrokeFontNotes.txt
 .DS_Store
 Thumbs.db
-test
