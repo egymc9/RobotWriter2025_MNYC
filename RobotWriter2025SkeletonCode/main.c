@@ -5,6 +5,9 @@
 #include "rs232.h"
 #include "serial.h"
 
+
+
+
 #define bdrate 115200               /* 115200 baud */
 
 void SendCommands (char *buffer );
@@ -45,25 +48,8 @@ int main()
     SendCommands(buffer);
 
 
-    // These are sample commands to draw out some information - these are the ones you will be generating.
-    sprintf (buffer, "G0 X-13.41849 Y0.000\n");
-    SendCommands(buffer);
-    sprintf (buffer, "S1000\n");
-    SendCommands(buffer);
-    sprintf (buffer, "G1 X-13.41849 Y-4.28041\n");
-    SendCommands(buffer);
-    sprintf (buffer, "G1 X-13.41849 Y0.0000\n");
-    SendCommands(buffer);
-    sprintf (buffer, "G1 X-13.41089 Y4.28041\n");
-    SendCommands(buffer);
-    sprintf (buffer, "S0\n");
-    SendCommands(buffer);
-    sprintf (buffer, "G0 X-7.17524 Y0\n");
-    SendCommands(buffer);
-    sprintf (buffer, "S1000\n");
-    SendCommands(buffer);
-    sprintf (buffer, "G0 X0 Y0\n");
-    SendCommands(buffer);
+    // Here is the main code:
+
 
     // Before we exit the program we need to close the COM port
     CloseRS232Port();
