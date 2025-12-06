@@ -6,3 +6,4 @@ build/
 SingleStrokeFontNotes.txt
 .DS_Store
 Thumbs.db
+output.gcode
