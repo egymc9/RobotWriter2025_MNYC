@@ -32,29 +32,28 @@ int main()
         int strokes = extract_and_print_strokes(buffer_seq, length, data, rows, stroke_data, init_height);
 
 
-        // Temporary section to preview G Code as an actual file
-        FILE *fGCode = fopen("output.gcode", "w");
-        if (!fGCode) 
-        { 
-            printf("Error opening output.gcode\n"); 
-            return -1; 
-        }
+        // Section to preview G-Code
 
-        fprintf(fGCode, "F1000\nM3\nS0\n");
+        printf("F1000\nM3\nS0\n");
 
         for (int i = 0; i < strokes; i++) 
         {
-            if (stroke_data[i][2] == 1) fprintf(fGCode, "S1000\nG1 ");
-            else fprintf(fGCode, "S0\nG0 ");
-
+            if (stroke_data[i][2] == 1) 
+            {
+                printf("S1000\nG1 ");
+            }
+                
+            else 
+            {
+                printf("S0\nG0 ");
+            }
+            
             float x_pos = (float)stroke_data[i][0] * init_height / 18.0f;
             float y_pos = (float)stroke_data[i][1] * init_height / 18.0f;
-            fprintf(fGCode, "X%f Y%f\n", x_pos, y_pos);
+            printf("X%f Y%f\n", x_pos, y_pos);
         }
 
-        fprintf(fGCode, "G0 Z0\nM30\n");
-        fclose(fGCode);
-        printf("G-code written to output.gcode\n");
+        printf("G0 Z0\nM30\n");
 
         //Free allocated memory
         free(stroke_data);
