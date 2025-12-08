@@ -76,7 +76,7 @@ char* file_to_buffer(const char* filename, int* length)
 }
 
 // Function to extract character array as SSF data
-int extract_and_print_strokes(const char* buffer, int number_of_chars,int** SSF, int K, int stroke_data[][3],int init_height) 
+int extract_and_print_strokes(const char* buffer, int number_of_chars,int** SSF, int rows_process, int stroke_data[][3],int init_height) 
 {
     int stroke_index = 0, enter = 0, total_chars_out = 0;
     const int sep_value = 999; // Use 999 as separation value in this function
@@ -123,7 +123,7 @@ int extract_and_print_strokes(const char* buffer, int number_of_chars,int** SSF,
 
         // Output strokes for the word
         while (i < j) {
-            for (int s = 0; s < K; s++) 
+            for (int s = 0; s < rows_process; s++) 
             {
                 // If statement to check for the index row, find 999 and C
                 if (SSF[s][0] == sep_value && SSF[s][1] == (unsigned char)buffer[i]) 
