@@ -81,7 +81,7 @@ int extract_and_print_strokes(const char* buffer, int number_of_chars,int** SSF,
     int stroke_index = 0, enter = 0, total_chars_out = 0;
     const int sep_value = 999; // Use 999 as separation value in this function
     float current_width_mm = 0.0f;
-    const float max_width_mm = 100.0f;
+    const float max_width_mm = 100.0f; // Change this value if the max width need to be changed
 
     for (int i = 0; i < number_of_chars; ) 
     {
