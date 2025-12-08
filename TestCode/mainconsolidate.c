@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include "main_fn.h"
 
+// The main section of this file will soon to be implemented into the main.c file
+
 int main() 
 {
     // Use the read_SSF function to convert SingleStrokeFont.txt into a pointer array
