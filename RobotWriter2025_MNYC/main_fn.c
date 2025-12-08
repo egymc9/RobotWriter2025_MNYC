@@ -85,7 +85,7 @@ int extract_and_print_strokes(const char* buffer, int number_of_chars,int** SSF,
 
     for (int i = 0; i < number_of_chars; ) 
     {
-        // Skip spaces/newlines directly
+        // Check for manual newlines and shift data values
         if (buffer[i] == '\n') 
         {
             enter++; 
@@ -94,6 +94,7 @@ int extract_and_print_strokes(const char* buffer, int number_of_chars,int** SSF,
             i++; 
             continue;
         }
+        // Check for spaces to add horizontal offset
         if (buffer[i] == ' ') 
         {
             total_chars_out++; 
