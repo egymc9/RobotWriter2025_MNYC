@@ -26,14 +26,14 @@ int main()
 
     // Use the read_SSF function to convert SingleStrokeFont.txt into a SSF pointer array
     int rows;
-    int** data = read_SSF("SingleStrokeFont.txt", &rows);
+    int** SSFdata = read_SSF("SingleStrokeFont.txt", &rows);
 
     // Use file_to_buffer function to buffer the text from test.txt into ASCII pointer array.
     int length;
     char* buffer_seq = file_to_buffer("test.txt", &length);
 
     // If statement for checking if both pointers above are available
-    if (data && buffer_seq) 
+    if (SSFdata && buffer_seq) 
     {
         // Input initial height of the printing
         int init_height;
@@ -49,7 +49,7 @@ int main()
         }
 
         // Use extract_and_print_strokes function to extract the ASCII array as SSF stroke data
-        int strokes = extract_and_print_strokes(buffer_seq, length, data, rows, stroke_data, init_height);
+        int strokes = extract_and_print_strokes(buffer_seq, length, SSFdata, rows, stroke_data, init_height);
 
         // Wake up robot
         printf ("\nAbout to wake up the robot\n");
@@ -108,8 +108,8 @@ int main()
         // Free allocated memory
         free(stroke_data);
         free(buffer_seq);
-        for (int i = 0; i < rows; i++) free(data[i]);
-        free(data);
+        for (int i = 0; i < rows; i++) free(SSFdata[i]);
+        free(SSFdata);
     }
 
 
